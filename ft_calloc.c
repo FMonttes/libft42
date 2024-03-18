@@ -6,7 +6,7 @@
 /*   By: fmontes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 09:45:54 by fmontes           #+#    #+#             */
-/*   Updated: 2023/10/20 09:57:43 by fmontes          ###   ########.fr       */
+/*   Updated: 2023/10/30 10:44:10 by fmontes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	char	*ptr;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
 	ptr = (char *)malloc(nmemb * size);
 	if (ptr != NULL)
 	{

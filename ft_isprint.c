@@ -6,12 +6,11 @@
 /*   By: fmontes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:53:45 by fmontes           #+#    #+#             */
-/*   Updated: 2023/10/18 13:16:11 by fmontes          ###   ########.fr       */
+/*   Updated: 2023/10/30 11:28:14 by fmontes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 int	ft_isprint(int c)
 {
@@ -19,9 +18,3 @@ int	ft_isprint(int c)
 		return (16384);
 	return (0);
 }
-
-/*int	main()
-{
-	printf("%d\n", ft_isprint('+'));
-	printf("%d\n", ft_isprint('\n'));
-}*/

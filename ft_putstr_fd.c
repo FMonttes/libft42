@@ -6,7 +6,7 @@
 /*   By: fmontes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 13:54:12 by fmontes           #+#    #+#             */
-/*   Updated: 2023/10/20 13:56:47 by fmontes          ###   ########.fr       */
+/*   Updated: 2023/10/30 11:17:26 by fmontes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i] != '\0')
 		write(fd, &s[i++], 1);
 }

@@ -6,7 +6,7 @@
 /*   By: fmontes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 14:02:24 by fmontes           #+#    #+#             */
-/*   Updated: 2023/10/25 11:08:17 by fmontes          ###   ########.fr       */
+/*   Updated: 2023/10/27 14:58:17 by fmontes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t n);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	**ft_split(char const *s, char c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 

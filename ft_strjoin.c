@@ -6,7 +6,7 @@
 /*   By: fmontes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 13:01:17 by fmontes           #+#    #+#             */
-/*   Updated: 2023/10/20 13:08:38 by fmontes          ###   ########.fr       */
+/*   Updated: 2023/10/30 11:15:33 by fmontes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 	int		j;
 
+	if (!s1 || !s2)
+		return (NULL);
 	newstr = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	i = 0;
 	j = 0;

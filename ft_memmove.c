@@ -6,7 +6,7 @@
 /*   By: fmontes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 10:34:04 by fmontes           #+#    #+#             */
-/*   Updated: 2023/10/19 09:26:03 by fmontes          ###   ########.fr       */
+/*   Updated: 2023/10/30 10:30:45 by fmontes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	destiny = (unsigned char *)dest;
 	source = (unsigned char *)src;
+	if (destiny == 0 && source == 0)
+		return (NULL);
 	if (destiny < source || destiny >= (source + n))
 	{
 		while (i < n)

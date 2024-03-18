@@ -6,11 +6,10 @@
 /*   By: fmontes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 10:47:11 by fmontes           #+#    #+#             */
-/*   Updated: 2023/10/18 12:27:13 by fmontes          ###   ########.fr       */
+/*   Updated: 2023/10/30 11:33:53 by fmontes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
@@ -24,8 +23,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-
-/*int main()
-{
-	printf("%s", ft_strchr("oi tudo bem com voce", 'i'));
-}*/

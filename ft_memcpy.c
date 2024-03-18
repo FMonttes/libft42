@@ -6,7 +6,7 @@
 /*   By: fmontes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 10:28:14 by fmontes           #+#    #+#             */
-/*   Updated: 2023/10/18 16:02:24 by fmontes          ###   ########.fr       */
+/*   Updated: 2023/10/30 10:29:39 by fmontes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	destt = (unsigned char *)dest;
 	srcc = (unsigned char *) src;
+	if (destt == 0 && srcc == 0)
+		return (NULL);
 	while (i < n)
 	{
 		*destt = *srcc;

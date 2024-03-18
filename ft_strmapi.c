@@ -6,7 +6,7 @@
 /*   By: fmontes <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 13:54:33 by fmontes           #+#    #+#             */
-/*   Updated: 2023/10/23 14:00:25 by fmontes          ###   ########.fr       */
+/*   Updated: 2023/10/30 11:16:32 by fmontes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 	char	*newstr;
 
+	if (!s || !f)
+		return (NULL);
 	i = 0;
 	newstr = malloc(ft_strlen(s) + 1);
 	if (!newstr)
